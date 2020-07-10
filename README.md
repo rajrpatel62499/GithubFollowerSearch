@@ -13,7 +13,12 @@
   add "deploy:gh": "ng build --prod --base-href=https://rajrpatel62499.github.io/GithubFollowerSearch/ --output-path dist && ngh"
   then npm run deploy:gh
 
-
+# Firebase Deploy
+  npm install -g firebase-tools
+  firebase login
+  firebase init
+  ng build --prod --output-path dist
+  firebase deploy
 
 # AngularLearn
 
