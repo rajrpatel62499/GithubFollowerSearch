@@ -5,13 +5,31 @@
   -> ng serve</br>
   
 # Deploy app to Github Pages
-  -> first install angular-cli-ghpages using npm</br>
-        -> npm  install -g angular-cli-ghpages</br>
-  -> ng build --prod --base-href=https://rajrpatel62499.github.io/GithubFollowerSearch/ --output-path dist</br>
-  -> >ngh [will automatically deploy to github repo wiht ghpages branch]</br>
+<ul>
+  <li>
+    first install angular-cli-ghpages using npm</br>
+    npm  install -g angular-cli-ghpages</br>
+  </li>
+  <li>
+  ng build --prod --base-href=https://rajrpatel62499.github.io/GithubFollowerSearch/ --output-path dist</br>
+  </li>
+  <li>
+   ngh</br>
+   will automatically deploy to github repo wiht ghpages branch</br>
+  </li>
+  <li>
+    For Short version</br>
+    add "deploy:gh": "ng build --prod --base-href=https://rajrpatel62499.github.io/GithubFollowerSearch/ --output-path dist && ngh"</br>
+    npm run deploy:gh</br>
+  </li>
+</ul>
+ 
+  
+  
+  
   [ For Short version]</br>
-  add "deploy:gh": "ng build --prod --base-href=https://rajrpatel62499.github.io/GithubFollowerSearch/ --output-path dist && ngh"</br>
-  then npm run deploy:gh</br>
+  
+ 
 
 # Firebase Deploy
   npm install -g firebase-tools</br>
