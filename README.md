@@ -1,24 +1,24 @@
 # Install this app
-  -> download project
-  -> cd project
-  -> npm install
-  -> ng serve
+  -> download project</br>
+  -> cd project</br>
+  -> npm install</br>
+  -> ng serve</br>
   
 # Deploy app to Github Pages
-  -> first install angular-cli-ghpages using npm
-        -> npm  install -g angular-cli-ghpages
-  -> ng build --prod --base-href=https://rajrpatel62499.github.io/GithubFollowerSearch/ --output-path dist
-  -> >ngh [will automatically deploy to github repo wiht ghpages branch]
-  [ For Short version]
-  add "deploy:gh": "ng build --prod --base-href=https://rajrpatel62499.github.io/GithubFollowerSearch/ --output-path dist && ngh"
-  then npm run deploy:gh
+  -> first install angular-cli-ghpages using npm</br>
+        -> npm  install -g angular-cli-ghpages</br>
+  -> ng build --prod --base-href=https://rajrpatel62499.github.io/GithubFollowerSearch/ --output-path dist</br>
+  -> >ngh [will automatically deploy to github repo wiht ghpages branch]</br>
+  [ For Short version]</br>
+  add "deploy:gh": "ng build --prod --base-href=https://rajrpatel62499.github.io/GithubFollowerSearch/ --output-path dist && ngh"</br>
+  then npm run deploy:gh</br>
 
 # Firebase Deploy
-  npm install -g firebase-tools
-  firebase login
-  firebase init
-  ng build --prod --output-path dist
-  firebase deploy
+  npm install -g firebase-tools</br>
+  firebase login</br>
+  firebase init</br>
+  ng build --prod --output-path dist</br>
+  firebase deploy</br>
 
 # AngularLearn
 
