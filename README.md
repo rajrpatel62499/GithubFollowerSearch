@@ -23,14 +23,6 @@
     npm run deploy:gh</br>
   </li>
 </ul>
- 
-  
-  
-  
-  [ For Short version]</br>
-  
- 
-
 # Firebase Deploy
   npm install -g firebase-tools</br>
   firebase login</br>
