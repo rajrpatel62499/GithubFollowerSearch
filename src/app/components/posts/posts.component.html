@@ -1,0 +1,36 @@
+<div class="container" id="mainContent">
+    <br>
+    <div class="container">
+
+        <div class="card border-primary mb-3 ">
+            <div class="card-header">Add Post</div>
+            <div class="card-body text-primary">
+                <h5 class="card-title">Post Title</h5>
+                <input type="text" class="form-control" #post_title />
+                <p class="card-text">
+                    Post content
+                </p>
+                <textarea class="form-control" name="post-title" id="post-title" cols="30" rows="10" #post_body>
+                </textarea>
+                <br />
+                <button class="btn btn-primary btn-block" (click)="savePost(post_title, post_body)">Add Post</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div *ngFor="let post of posts">
+            <div class="card">
+                <h5 class="card-header">{{ post.id }}</h5>
+                <div class="card-body">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <p class="card-text">{{ post.body }}</p>
+                    <a class="btn btn-danger float-right " (click)="deletePost(post)">Delete</a>
+                    <a href="#" class="btn btn-warning float-right mr-3" (click)="updatePost()">Update</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

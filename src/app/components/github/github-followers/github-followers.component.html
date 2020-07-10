@@ -1,0 +1,34 @@
+<div class="container">
+    <br>
+    <h1 for="searchFollowers">Search Github Followers</h1>
+    <div class="row">
+        <div class="col-10 form-group">
+            <input #githubFollowerSearch class="form-control" type="text" name="searchFollowers" id="searchFollowers">
+        </div>
+        <div class="col-2">
+            <button (click)="loadGithubFollowersContent(githubFollowerSearch)" class="btn btn-primary btn-block">Search</button>
+        </div>
+    </div>
+
+    <div *ngFor="let follower of followers" class="media mb-3 border border-black">
+        <div class="media-left border border-dark m-2 rounded ">
+            <a target="self" [routerLink]="['/followers',follower.id,follower.login]">
+                <img class="avatar media-object" style="width: 100px; height: 100px;" src="{{ follower.avatar_url }}" alt="...">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">
+                <a target="self" href="{{follower.html_url}}">{{ follower.login }}</a>
+            </h4>
+            <a href="{{follower.html_url}}">{{ follower.html_url }}</a> {{follower.id}}
+        </div>
+
+    </div>
+
+</div>
+
+<div *ngIf="!haveFollowers()" class="container">
+    <div class="alert alert-danger">
+        Sorry You have not followers! please search something.
+    </div>
+</div>

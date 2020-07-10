@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand text-white" routerLink="">My APP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link text-white" routerLinkActive="active text-danger current" routerLink="">Home</a>
+            <a class="nav-item nav-link text-white" routerLinkActive="active text-danger current" routerLink="/posts">Posts</a>
+            <a class="nav-item nav-link text-white" routerLinkActive="active text-danger current" routerLink="/followers" [queryParams]="{page:1,order:'newest'}">Followers</a>
+            <a class="nav-item nav-link text-white" routerLinkActive="active text-danger current" routerLink="/contact">Contact Us</a>
+        </div>
+    </div>
+</nav>
+<style>
+    .navbar.navbar-expand-lg.navbar-light {
+        background-color: rgb(27, 23, 23);
+    }
+</style>
