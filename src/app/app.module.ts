@@ -1,3 +1,5 @@
+import { ZippyComponent } from './components/zippy/zippy.component';
+import { TodosComponent } from './components/todos/todos.component';
 import { RouterModule } from '@angular/router';
 import { PostsService } from './services/posts.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -26,40 +28,14 @@ import { FooterComponent } from './components/common/footer/footer.component';
     NotFoundComponent,
     ContactUsComponent,
     FooterComponent,
-
+    TodosComponent,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(
-      [
-        {
-          path: "",
-          component: HomeComponent
-        },
-        {
-          path: "followers/:id/:username",
-          component: GithubProfileComponent
-        },
-        {
-          path: "followers",
-          component: GithubFollowersComponent
-        },
-        {
-          path: "posts",
-          component: PostsComponent
-        },
-        {
-          path: "contact",
-          component: ContactUsComponent
-        },
-        {
-          path: "**",
-          component: NotFoundComponent
-        },
-      ]
-    )
+    AppRoutingModule
   ],
   providers: [
     PostsService
