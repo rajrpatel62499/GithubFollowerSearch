@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import { fade, slide } from 'src/app/animations';
+import { todoAnimation } from './todoAnimation';
+
 
 @Component({
   selector: 'todos',
   templateUrl: './todos.component.html',
   styleUrls: ['./todos.component.css'],
+  animations: [todoAnimation]
 })
 export class TodosComponent {
   items: any[] = [
