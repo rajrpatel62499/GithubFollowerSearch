@@ -1,3 +1,37 @@
+# Install this app
+  -> download project</br>
+  -> cd project</br>
+  -> npm install</br>
+  -> ng serve</br>
+  
+# Deploy app to Github Pages
+<ul>
+  <li>
+    first install angular-cli-ghpages using npm</br>
+    npm  install -g angular-cli-ghpages</br>
+  </li>
+  <li>
+  ng build --prod --base-href=https://rajrpatel62499.github.io/GithubFollowerSearch/ --output-path dist</br>
+  </li>
+  <li>
+   ngh</br>
+   will automatically deploy to github repo wiht ghpages branch</br>
+  </li>
+  <li>
+    For Short version</br>
+    add "deploy:gh": "ng build --prod --base-href=https://rajrpatel62499.github.io/GithubFollowerSearch/ --output-path dist && ngh"</br>
+    npm run deploy:gh</br>
+  </li>
+</ul>
+
+
+# Firebase Deploy
+  npm install -g firebase-tools</br>
+  firebase login</br>
+  firebase init</br>
+  ng build --prod --output-path dist</br>
+  firebase deploy</br>
+
 # AngularLearn
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
