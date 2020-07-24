@@ -16,10 +16,7 @@ export class DataService {
   public githubUserUrl = "https://api.github.com/users/"
   public githubUser = 'abc';
   public url = this.githubUserUrl + this.githubUser + '/followers';
-  constructor(private http: HttpClient) {
-
-
-  }
+  constructor(private http: HttpClient) { }
 
 
   setUser(user: string) {

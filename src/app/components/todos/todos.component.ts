@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { fade, slide } from 'src/app/animations';
-import { todoAnimation } from './todoAnimation';
-
+import { todoAnimation, todosAnimation } from './todoAnimation';
 
 @Component({
   selector: 'todos',
   templateUrl: './todos.component.html',
   styleUrls: ['./todos.component.css'],
-  animations: [todoAnimation]
+  animations: [todosAnimation,todoAnimation],
 })
 export class TodosComponent {
   items: any[] = [
@@ -17,8 +15,7 @@ export class TodosComponent {
 
   addItem(input: HTMLInputElement) {
     input.value = input.value.trim();
-    if (input.value == '')
-      return
+    if (input.value == '') return;
     this.items.splice(0, 0, input.value);
     input.value = '';
   }
@@ -27,4 +24,7 @@ export class TodosComponent {
     let index = this.items.indexOf(item);
     this.items.splice(index, 1);
   }
+
+  todoAnimationStart(e){console.log(e)};
+  todoAnimationDone(e){console.log(e)};
 }
