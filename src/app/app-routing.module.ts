@@ -1,3 +1,4 @@
+import { DemoComponent } from './components/demo/demo.component';
 import { ZippyComponent } from './components/zippy/zippy.component';
 import { TodosComponent } from './components/todos/todos.component';
 import { NgModule } from '@angular/core';
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: "contact",
     component: ContactUsComponent
+  },
+  {
+    path: "demo",
+    component : DemoComponent
   },
   {
     path: "**",

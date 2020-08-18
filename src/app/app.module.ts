@@ -17,6 +17,9 @@ import { ContactUsComponent } from './components/common/contact-us/contact-us.co
 import { GithubFollowersComponent } from './components/github/github-followers/github-followers.component';
 import { GithubProfileComponent } from './components/github/github-profile/github-profile.component';
 import { FooterComponent } from './components/common/footer/footer.component';
+import { DemoComponent } from './components/demo/demo.component';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,14 +32,16 @@ import { FooterComponent } from './components/common/footer/footer.component';
     ContactUsComponent,
     FooterComponent,
     TodosComponent,
-    ZippyComponent
+    ZippyComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ButtonsModule
   ],
   providers: [
     PostsService
